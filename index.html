@@ -18,7 +18,7 @@
 
   <style>
     html {
-      background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+      background: #98d3fb ;
       background-size: cover;
       font-family: 'helvetica neue';
       text-align: center;
@@ -49,15 +49,15 @@
         0 0 10px rgba(0,0,0,0.2);
     }
 
-    .hand hour-hand {
-      background: rgb(226, 7, 7);
-    }
+
 
     .clock-face {
       position: relative;
       width: 100%;
       height: 100%;
       transform: translateY(-3px); /* account for the height of the clock hands */
+    
+      border-radius: 50%;
     }
 
     .hand {
@@ -71,6 +71,28 @@
       transition: all 0.05s;
       transition-timing-function: ease-in-out;
     }
+
+    .second-hand {
+      background: red;
+      height: 2px;
+    }
+
+    .hour-hand {
+      width: 40%;
+      height: 6px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: ease-in-out;
+      max-width: 105px;
+      left: 15%;
+     
+  
+    }
+    
     
 
   </style>
